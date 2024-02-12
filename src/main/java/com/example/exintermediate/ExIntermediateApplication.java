@@ -9,5 +9,4 @@ public class ExIntermediateApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ExIntermediateApplication.class, args);
 	}
-
 }
