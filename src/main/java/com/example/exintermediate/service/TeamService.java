@@ -23,4 +23,9 @@ public class TeamService {
   public List<Team> findAll() {
     return teamRepository.findAll();
   }
+
+  // 主キーからチーム情報を取得
+  public Team load(Integer id) {
+    return teamRepository.load(id);
+  }
 }
