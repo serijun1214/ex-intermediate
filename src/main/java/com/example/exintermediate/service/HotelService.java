@@ -12,7 +12,7 @@ import com.example.exintermediate.repository.HotelRepository;
  * hotelsテーブルを操作するサービス
  */
 @Service
-public class HotelServoce {
+public class HotelService {
   
   // HotelRepositoryをDI
   @Autowired
