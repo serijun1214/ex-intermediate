@@ -32,7 +32,7 @@ public class TeamRepository {
   };
 
   /**
-   * 全てのチーム情報を取得する
+   * 全てのチーム情報を取得
    * 
    * @return チーム情報のリスト
    */
