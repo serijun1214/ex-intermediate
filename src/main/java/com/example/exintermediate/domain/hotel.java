@@ -3,7 +3,7 @@ package com.example.exintermediate.domain;
 /**
  * hotelsテーブルのデータを表すドメイン
  */
-public class hotel {
+public class Hotel {
   // ホテルID
   private Integer id;
   // エリア名
