@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>衣服</title>
+  </head>
+  <body>
+    <h1>衣服</h1>
+    <form th:action="@{/clotheSearch}" method="get">
+      <div>
+        <div>
+          <label for="male">Man</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            th:checked="${gender == '0'}"
+            value="0"
+          />
+        </div>
+        <div>
+          <label for="female">Women</label>
+
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            th:checked="${gender == '1'}"
+            value="1"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="color">色:</label>
+        <select id="color" name="color">
+          <option th:selected="${color == '赤'}" value="赤">赤</option>
+          <option th:selected="${color == '青'}" value="青">青</option>
+          <option th:selected="${color == '白'}" value="白">白</option>
+          <option th:selected="${color == '黄'}" value="黄">黄</option>
+        </select>
+      </div>
+      <button>送信</button>
+    </form>
+
+    <table th:each="clothe : ${clotheList}" border="1">
+      <tr>
+        <th>ジャンル</th>
+        <td th:text="${clothe.genre}"></td>
+      </tr>
+      <tr>
+        <th>サイズ</th>
+        <td th:text="${clothe.size}"></td>
+      </tr>
+      <tr>
+        <th>価格</th>
+        <td th:text="${#numbers.formatInteger(clothe.price, 0, 'COMMA')}"></td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -10,8 +10,11 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
 import com.example.exintermediate.domain.Clothe;
-import com.example.exintermediate.domain.Hotel;
 
+
+/**
+ * clothesテーブルを操作するリポジトリ
+ */
 @Repository
 public class ClotheRepository {
 

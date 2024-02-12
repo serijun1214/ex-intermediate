@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.example.exintermediate.domain.Hotel;
-import com.example.exintermediate.domain.Team;
+
 
 /**
  * hotelsテーブルを操作するリポジトリ
